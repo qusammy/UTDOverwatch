@@ -77,7 +77,72 @@ hr.divider
 {
   border: none;
   border-top: 1px solid #8D96A5;
-  width: 70rem;
+  width: 1100px;
+  border-radius: 5px;
+  align-items: center;
+  margin: 75px auto;
+}
+
+.gamer
+{
+  width: 300px;
+  height: 335px;
+  display: flex;
+  align-items: center;
+}
+
+img
+{
+  width: 300px;
+  height: 335px;
+  padding-left: 10cm;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.name
+{
+  color: #3F4C64;
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 40px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+}
+
+.title
+{
+  color: #8D96A5;
+  font-family: "Pavanam", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.mains
+{
+  color: #3F4C64;
+  font-family: "Pavanam", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  padding-left: 40px;
+}
+
+.body-text
+{
+  color: #8D96A5;
+  font-family: "Pavanam", sans-serif;
+  font-weight: 300;
+  width: 600px;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+hr.divider-small
+{
+  border: none;
+  border-top: 1px solid #8D96A5;
+  width: 770px;
   border-radius: 5px;
   align-items: center;
   margin: 75px auto;
