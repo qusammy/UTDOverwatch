@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #f0f6fc;
+}
+
+header {
+  background-image: url('assets/background.avif');
+  
+  position: relative;
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat;
+
+  padding: 6rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Font properties*/
+  
+  height: 375px;
+  color: #ffffff;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 3rem;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 10px;
+}
+
+/* Transparent black square over header image, under the text but over the image  */
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+/* Ensures text is in front of transparent black square*/
+
+header h1,
+header .header-nav {
+  position: relative;
+  z-index: 2;
+}
+
+.intro {
+  text-align: left;
+  padding: 5rem;
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 150;
+  font-family: "Outfit-Regular", sans-serif;
+}
+
+/* header subHeadLine {
+  font-size: 3.5rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 350;
+  letter-spacing: 5px;
+  color: #000000;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 1;
+} */
