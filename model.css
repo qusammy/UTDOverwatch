@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   background-color: #ffffff;
   color: #ffffff;
   overflow-x: hidden;
@@ -51,7 +51,7 @@ header::before {
 
 h2 {
   text-align: left;
-  padding-left: 25rem;
+  padding-left: min(25rem, 25%);
   font-size: clamp(0.90rem, 5vw, 3rem);
   color: #000000;
   font-weight: 200;
@@ -71,7 +71,7 @@ p {
 }
 
 .info {
-  padding-left: 25rem;
+  padding-left: min(25rem, 25%);
 }
 
 hr.divider {
@@ -98,9 +98,10 @@ hr.divider-small {
   gap: 2rem;
 }
 
-.img {
-  max-width: 300px;
-  max-height: 335px;
+.cardImg {
+  max-width: 335px;
+  width:100%;
+  height: auto;
   padding-left: 25rem;
   border-radius: 5px;
   object-fit: cover;
@@ -135,19 +136,26 @@ hr.divider-small {
   max-width: 600px;
 }
 
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  columns: 3 300px;
+  column-gap: 1em;
+}
 
+.galleryImg {
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+}
 
 @media (max-width: 600px){
 
   .wrapper main{
   width: 100%;
-  }
-
-  body {
-  margin: 0;
-  background-color: #ffffff;
-  color: #ffffff;
-  overflow-x: hidden;
 
 }
 }
