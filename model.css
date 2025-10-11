@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #ffffff;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 /* Header image */
@@ -17,24 +18,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-  /* Header text properties */
+/* Header text properties */
 
-.header-text{
+.header-text {
   height: 375px;
   color: #ffffff;
   z-index: 1;
   font-weight: 600;
-  font-size: 5rem;
+  font-size: clamp(1rem, 5vw, 5rem);
   font-family: "Outfit", sans-serif;
   letter-spacing: 10px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 /* Transparent black square over header image, under the text but over the image  */
@@ -50,11 +49,10 @@ header::before {
 
 /* Subheading properties*/
 
-h2 
-{
+h2 {
   text-align: left;
-  padding-left: 10cm;
-  font-size: 3rem;
+  padding-left: 25rem;
+  font-size: clamp(0.90rem, 5vw, 3rem);
   color: #000000;
   font-weight: 200;
   font-family: "Outfit", sans-serif;
@@ -62,88 +60,94 @@ h2
 
 /*Body text properties*/
 
-p
-{
+p {
   text-align: left;
-  font-size: 1.5rem;
-  width: 60rem;
-  padding-left: 10cm;
+  font-size: clamp(0.25rem, 5vw, 1.5rem);
+  max-width: 60rem;
+  width: 100%;
   color: #8D96A5;
   font-weight: 150;
   font-family: "Pavanam", sans-serif;
 }
 
-hr.divider
-{
+.info {
+  padding-left: 25rem;
+}
+
+hr.divider {
   border: none;
   border-top: 1px solid #8D96A5;
-  width: 1100px;
+  max-width: 75rem;
   border-radius: 5px;
   align-items: center;
   margin: 75px auto;
 }
 
-.gamer
-{
-  width: 300px;
-  height: 335px;
-  display: flex;
+hr.divider-small {
+  border: none;
+  border-top: 1px solid #8D96A5;
+  max-width: 50rem;
+  border-radius: 5px;
   align-items: center;
+  margin: 75px auto;
 }
 
-img
-{
-  width: 300px;
-  height: 335px;
-  padding-left: 10cm;
+.gamer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.img {
+  max-width: 300px;
+  max-height: 335px;
+  padding-left: 25rem;
   border-radius: 5px;
   object-fit: cover;
 }
 
-.name
-{
+.name {
   color: #3F4C64;
   font-family: "Outfit";
   font-weight: 300;
   font-size: 40px;
-  padding-left: 40px;
-  padding-bottom: 10px;
 }
 
-.title
-{
+.title {
   color: #8D96A5;
   font-family: "Pavanam", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  padding-left: 40px;
 }
 
-.mains
-{
+.mains {
   color: #3F4C64;
   font-family: "Pavanam", sans-serif;
   font-weight: 300;
   font-size: 25px;
-  padding-left: 40px;
 }
 
-.body-text
-{
+.body-text {
   color: #8D96A5;
   font-family: "Pavanam", sans-serif;
   font-weight: 300;
-  width: 600px;
   font-size: 20px;
-  padding-left: 40px;
+  max-width: 600px;
 }
 
-hr.divider-small
-{
-  border: none;
-  border-top: 1px solid #8D96A5;
-  width: 770px;
-  border-radius: 5px;
-  align-items: center;
-  margin: 75px auto;
+
+
+@media (max-width: 600px){
+
+  .wrapper main{
+  width: 100%;
+  }
+
+  body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #ffffff;
+  overflow-x: hidden;
+
+}
 }
