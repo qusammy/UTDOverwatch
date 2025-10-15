@@ -1,161 +1,275 @@
 body {
-  margin: 0 auto;
-  background-color: #ffffff;
-  color: #ffffff;
-  overflow-x: hidden;
+ margin: 0 auto;
+ background-color: #ffffff;
+ color: #ffffff;
+ overflow-x: hidden;
 }
+
 
 /* Header image */
 
-header {
-  background-image: url('assets/background.avif');
-  
-  position: relative;
-  background-size: cover;  
-  background-position: center; 
-  background-repeat: no-repeat;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header {
+ background-image: url('assets/background.avif');
+  position: relative;
+ background-size: cover; 
+ background-position: center;
+ background-repeat: no-repeat;
+
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
+
 
 /* Header text properties */
 
+
 .header-text {
-  height: 375px;
-  color: #ffffff;
-  z-index: 1;
-  font-weight: 600;
-  font-size: clamp(1rem, 5vw, 5rem);
-  font-family: "Outfit", sans-serif;
-  letter-spacing: 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ height: 375px;
+ color: #ffffff;
+ z-index: 1;
+ font-weight: 600;
+ font-size: 5rem;
+ font-family: "Outfit", sans-serif;
+ letter-spacing: 10px;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
+
 
 /* Transparent black square over header image, under the text but over the image  */
 
+
 header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
-  z-index: 0;
+ content: "";
+ position: absolute;
+ top: 0; left: 0;
+ width: 100%; height: 100%;
+ background-color: rgba(0, 0, 0, 0.35);
+ z-index: 0;
 }
+
 
 /* Subheading properties*/
 
+
 h2 {
-  text-align: left;
-  padding-left: min(25rem, 25%);
-  font-size: clamp(0.90rem, 5vw, 3rem);
-  color: #000000;
-  font-weight: 200;
-  font-family: "Outfit", sans-serif;
+ text-align: left;
+ padding-left: 25rem;
+ font-size: 3rem;
+ color: #000000;
+ font-weight: 400;
+ font-family: "Outfit", sans-serif;
 }
+
 
 /*Body text properties*/
 
+
 p {
-  text-align: left;
-  font-size: clamp(0.25rem, 5vw, 1.5rem);
-  max-width: 60rem;
-  width: 100%;
-  color: #8D96A5;
-  font-weight: 150;
-  font-family: "Pavanam", sans-serif;
+ text-align: left;
+ color: #8D96A5;
+ font-weight: 150;
+ font-family: "Pavanam", sans-serif;
 }
+
 
 .info {
-  padding-left: min(25rem, 25%);
+ padding-left: 25rem;
+ font-size: clamp(0.25rem, 5vw, 1.5rem);
+ max-width: 60rem;
+ width: 100%;
+
+
 }
+
 
 hr.divider {
-  border: none;
-  border-top: 1px solid #8D96A5;
-  max-width: 75rem;
-  border-radius: 5px;
-  align-items: center;
-  margin: 75px auto;
+ border: none;
+ border-top: 1px solid #8D96A5;
+ max-width: 75rem;
+ border-radius: 5px;
+ align-items: center;
+ margin: 75px auto;
 }
+
 
 hr.divider-small {
-  border: none;
-  border-top: 1px solid #8D96A5;
-  max-width: 50rem;
-  border-radius: 5px;
-  align-items: center;
-  margin: 75px auto;
+ border: none;
+ border-top: 1px solid #8D96A5;
+ max-width: 65rem;
+ border-radius: 5px;
+ align-items: center;
+ margin: 75px auto;
 }
+
 
 .gamer {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+ display: flex;
+ align-items: center;
+ gap: 2rem;
 }
+
 
 .cardImg {
-  max-width: 335px;
-  width:100%;
-  height: auto;
-  padding-left: 25rem;
-  border-radius: 5px;
-  object-fit: cover;
+ max-width: 335px;
+ width:100%;
+ height: auto;
+ padding-left: 25rem;
+ border-radius: 5px;
+ object-fit: cover;
 }
+
 
 .name {
-  color: #3F4C64;
-  font-family: "Outfit";
-  font-weight: 300;
-  font-size: 40px;
+ color: #3F4C64;
+ font-family: "Outfit";
+ font-weight: 300;
+ font-size: 40px;
 }
+
 
 .title {
-  color: #8D96A5;
-  font-family: "Pavanam", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
+ color: #8D96A5;
+ font-family: "Pavanam", sans-serif;
+ font-weight: 300;
+ font-size: 20px;
 }
+
 
 .mains {
-  color: #3F4C64;
-  font-family: "Pavanam", sans-serif;
-  font-weight: 300;
-  font-size: 25px;
+ color: #3F4C64;
+ font-family: "Pavanam", sans-serif;
+ font-weight: 300;
+ font-size: 25px;
 }
+
 
 .body-text {
-  color: #8D96A5;
-  font-family: "Pavanam", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  max-width: 600px;
+ color: #8D96A5;
+ font-family: "Pavanam", sans-serif;
+ font-weight: 300;
+ font-size: 20px;
+ max-width: 600px;
 }
+
 
 div.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: min(1000px, 100%);
-  margin: 0 auto;
-  columns: 3 300px;
-  column-gap: 1em;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: flex-start;
+ width: min(1000px, 100%);
+ margin: 0 auto;
+ columns: 3 300px;
+ column-gap: 1em;
 }
 
+
 .galleryImg {
-  display: block;
-  margin-bottom: 1em;
-  width: 100%;
+ display: block;
+ margin-bottom: 1em;
+ width: 100%;
 }
+
+
+/* Phone screen */
+
 
 @media (max-width: 600px){
 
-  .wrapper main{
-  width: 100%;
 
+ .wrapper main {
+ width: 100%;
+ }
+
+
+ .header-text{
+   font-size: 2rem;
+ }
+
+
+ h2{
+   font-size: 1.75rem;
+   padding-left: 0.75rem;
+ }
+
+
+ .info{
+   padding-left: 0.75rem;
+   font-size: 0.90rem;
+   max-width: 350px;
+ }
+
+
+ hr.divider {
+   max-width: 20rem;
+   margin: 50px auto;
+ }
+
+
+ hr.divider-small {
+   max-width: 10rem;
+   margin: 50px auto;
+ }
+
+
+ .gamer {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+}
+
+
+.cardImg {
+ max-width: 15rem;
+ width:100%;
+ height: auto;
+ padding-left: 0.75rem;
+ border-radius: 5px;
+ object-fit: cover;
+}
+
+
+.name {
+ color: #3F4C64;
+ font-family: "Outfit";
+ font-weight: 300;
+ padding-left: 0.75rem;
+ font-size: 1.25rem;
+}
+
+
+.title {
+ color: #8D96A5;
+ font-family: "Pavanam", sans-serif;
+ font-weight: 300;
+ padding-left: 0.70rem;
+ font-size: 1.25rem;
+}
+
+
+.mains {
+ color: #3F4C64;
+ font-family: "Pavanam", sans-serif;
+ font-weight: 300;
+ padding-left: 0.75rem;
+ font-size: 1rem;
+}
+
+
+.body-text {
+ color: #8D96A5;
+ font-family: "Pavanam", sans-serif;
+ font-weight: 300;
+ font-size: .90rem;
+ padding-left: 0.75rem;
+ max-width: 350px;
 }
 }
+
