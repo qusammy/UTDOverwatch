@@ -11,11 +11,10 @@ body {
 
 header {
  background-image: url('assets/background.avif');
-  position: relative;
+ position: relative;
  background-size: cover; 
  background-position: center;
  background-repeat: no-repeat;
-
 
  display: flex;
  align-items: center;
@@ -53,14 +52,12 @@ header::before {
  z-index: 0;
 }
 
-
 /* Subheading properties*/
-
 
 h2 {
  text-align: left;
- padding-left: 25rem;
- font-size: 3rem;
+ padding-left: clamp(0.75rem, 25vw, 25rem);
+ font-size: clamp(1.75rem, 2.5vw, 3rem);
  color: #000000;
  font-weight: 400;
  font-family: "Outfit", sans-serif;
@@ -79,19 +76,18 @@ p {
 
 
 .info {
- padding-left: 25rem;
+ padding-left: clamp(0.75rem, 25vw, 25rem);
  font-size: clamp(0.25rem, 5vw, 1.5rem);
- max-width: 60rem;
+ max-width: clamp(350px, 60vw, 60rem);
  width: 100%;
-
-
 }
 
+/* Custom dividers */
 
 hr.divider {
  border: none;
  border-top: 1px solid #8D96A5;
- max-width: 75rem;
+ max-width: clamp(20rem, 65vw, 75rem);
  border-radius: 5px;
  align-items: center;
  margin: 75px auto;
@@ -101,12 +97,13 @@ hr.divider {
 hr.divider-small {
  border: none;
  border-top: 1px solid #8D96A5;
- max-width: 65rem;
+ max-width: clamp(10rem, 65vw, 65rem);
  border-radius: 5px;
  align-items: center;
  margin: 75px auto;
 }
 
+/* Profile cards and card properties */
 
 .gamer {
  display: flex;
@@ -116,10 +113,10 @@ hr.divider-small {
 
 
 .cardImg {
- max-width: 335px;
+ max-width: clamp(15rem, 35vw, 300px);
  width:100%;
- height: auto;
- padding-left: 25rem;
+ height: 350px;
+ margin-left: clamp(0.75rem, 25vw, 25rem);
  border-radius: 5px;
  object-fit: cover;
 }
@@ -175,101 +172,90 @@ div.gallery {
  width: 100%;
 }
 
-
 /* Phone screen */
-
 
 @media (max-width: 600px){
 
+  .wrapper main {
+    width: 100%;
+  }
 
- .wrapper main {
- width: 100%;
- }
+  .header-text{
+    font-size: 2rem;
+  }
 
+  h2{
+    font-size: 1.75rem;
+    padding-left: 0.75rem;
+  }
 
- .header-text{
-   font-size: 2rem;
- }
+  .info{
+    padding-left: 0.75rem;
+    font-size: 0.90rem;
+    max-width: 350px;
+  }
 
-
- h2{
-   font-size: 1.75rem;
-   padding-left: 0.75rem;
- }
-
-
- .info{
-   padding-left: 0.75rem;
-   font-size: 0.90rem;
-   max-width: 350px;
- }
-
-
- hr.divider {
-   max-width: 20rem;
-   margin: 50px auto;
- }
-
+  hr.divider {
+    max-width: 20rem;
+    margin: 50px auto;
+  }
 
  hr.divider-small {
-   max-width: 10rem;
-   margin: 50px auto;
+    max-width: 10rem;
+    margin: 50px auto;
  }
 
+  .gamer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
 
- .gamer {
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- gap: 2rem;
+  .cardImg {
+    max-width: 15rem;
+    width:100%;
+    height: auto;
+    margin-left: 0.75rem;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .name {
+    color: #3F4C64;
+    font-family: "Outfit";
+    font-weight: 300;
+    padding-left: 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  .title {
+    color: #8D96A5;
+    font-family: "Pavanam", sans-serif;
+    font-weight: 300;
+    padding-left: 0.70rem;
+    font-size: 1.25rem;
+  }
+
+  .mains {
+    color: #3F4C64;
+    font-family: "Pavanam", sans-serif;
+    font-weight: 300;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .body-text {
+    color: #8D96A5;
+    font-family: "Pavanam", sans-serif;
+    font-weight: 300;
+    font-size: .90rem;
+    padding-left: 0.75rem;
+    max-width: 350px;
+  }
 }
 
-
-.cardImg {
- max-width: 15rem;
- width:100%;
- height: auto;
- padding-left: 0.75rem;
- border-radius: 5px;
- object-fit: cover;
+@media (min-width: 768px) and (max-width: 992px) {
+    
 }
-
-
-.name {
- color: #3F4C64;
- font-family: "Outfit";
- font-weight: 300;
- padding-left: 0.75rem;
- font-size: 1.25rem;
-}
-
-
-.title {
- color: #8D96A5;
- font-family: "Pavanam", sans-serif;
- font-weight: 300;
- padding-left: 0.70rem;
- font-size: 1.25rem;
-}
-
-
-.mains {
- color: #3F4C64;
- font-family: "Pavanam", sans-serif;
- font-weight: 300;
- padding-left: 0.75rem;
- font-size: 1rem;
-}
-
-
-.body-text {
- color: #8D96A5;
- font-family: "Pavanam", sans-serif;
- font-weight: 300;
- font-size: .90rem;
- padding-left: 0.75rem;
- max-width: 350px;
-}
-}
-
