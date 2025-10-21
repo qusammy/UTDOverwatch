@@ -5,7 +5,6 @@ body {
  overflow-x: hidden;
 }
 
-
 /* Header image */
 
 
@@ -63,7 +62,14 @@ h2 {
  font-family: "Outfit", sans-serif;
 }
 
-
+h4 {
+  text-align: left;
+  padding-left: clamp(0.75rem, 25vw, 25rem);
+  color: #3F4C64;
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 35px;
+}
 /*Body text properties*/
 
 
@@ -171,6 +177,32 @@ div.gallery {
  margin-bottom: 1em;
  width: 100%;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000E25;
+  padding: 1rem 3rem;
+  height: 100px;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(0.75rem, 5vw, 2rem);
+  font-weight: 200;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-img {
+  height: auto;
+}
+
 
 /* Phone screen */
 
