@@ -65,11 +65,12 @@ h2 {
 h4 {
   text-align: left;
   padding-left: clamp(0.75rem, 25vw, 25rem);
+  font-size: clamp(1rem, 2.5vw, 2rem);
   color: #3F4C64;
   font-family: "Outfit";
   font-weight: 300;
-  font-size: 35px;
 }
+
 /*Body text properties*/
 
 
@@ -218,6 +219,11 @@ footer {
 
   h2{
     font-size: 1.75rem;
+    padding-left: 0.75rem;
+  }
+
+  h4{
+  font-size: 1.25rem;
     padding-left: 0.75rem;
   }
 
