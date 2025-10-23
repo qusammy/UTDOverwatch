@@ -8,4 +8,4 @@ Currently, the website has two main files: ``` home.html ``` and ``` model.css `
 View [Figma framework here](https://www.figma.com/site/AlqWEftLRu2SS10Q9reAHd/utdOverwatch?node-id=0-4&t=891qyzIyN2Q8cLiU-1)
 
 ## Timeline
-**October 2025 -** Developing one-pager website -- still under development
+**October 2025 -** One-pager website ready for deployment
