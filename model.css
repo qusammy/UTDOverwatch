@@ -174,10 +174,15 @@ div.gallery {
 
 
 .galleryImg {
- display: block;
+ display: flex;
  margin-bottom: 1em;
  width: 100%;
 }
+
+.galleryImg img {
+  display: block;
+}
+
 
 footer {
   display: flex;
