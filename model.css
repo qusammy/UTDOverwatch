@@ -1,6 +1,6 @@
 body {
- margin: 0 auto;
- background-color: #ffffff;
+ margin: 0;
+ background-color: #fefefe;
  color: #ffffff;
  overflow-x: hidden;
 }
@@ -162,25 +162,24 @@ hr.divider-small {
 }
 
 
-div.gallery {
- display: flex;
- flex-wrap: wrap;
- justify-content: flex-start;
- width: min(1000px, 100%);
- margin: 0 auto;
- columns: 3 300px;
- column-gap: 1em;
+.img-gallery{
+  margin-top: 2rem;
+  text-align: center;
 }
 
-
-.galleryImg {
- display: flex;
- margin-bottom: 1em;
- width: 100%;
+.img-gallery > div{
+  columns: 3;
+  gap: 1.25rem;
+  padding: 1.25rem;
 }
 
-.galleryImg img {
+.img-gallery img
+{
   display: block;
+  width:75%;
+  border-radius: 5px;
+  margin-bottom: 1.25rem;
+
 }
 
 
@@ -214,6 +213,14 @@ footer {
 
 @media (max-width: 600px){
 
+  .img-gallery > div{
+  columns: 1;
+  }
+
+  .img-gallery{
+  margin-top: 1rem;
+  text-align: center;
+  }
   .wrapper main {
     width: 100%;
   }
