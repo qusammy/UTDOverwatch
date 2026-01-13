@@ -9,3 +9,4 @@ View [Figma framework here](https://www.figma.com/site/AlqWEftLRu2SS10Q9reAHd/ut
 
 ## Timeline
 **October 2025 -** One-pager website ready for deployment
+**January 2026 -** New website design under development
