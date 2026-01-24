@@ -22,17 +22,17 @@ header {
 
 .home
 {
-    background-image: url('assets/background.avif');
+  background-image: url('assets/background.avif');
 }
 
 .about
 {
-    background-image: url('assets/about-us.jpg');
+  background-image: url('assets/about-us.jpg');
 }
 
 .officers
 {
-    background-image: url('assets/officers.avif');
+  background-image: url('assets/officers.avif');
 }
 
 
@@ -53,9 +53,9 @@ header {
 
 
 .header-text-sub{
-    font-weight: 300;
-    font-size: 2rem;
-    color: #ffffff;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 /* Transparent black square over header image, under the text but over the image  */
@@ -70,7 +70,7 @@ header::before {
 }
 
 h1{
-    text-align: center;
+  text-align: center;
 }
 
 .navbar {
@@ -83,76 +83,130 @@ h1{
 
 .navbar ul
 {
-    z-index: 100;
-    list-style-type: none;
-    background-color: #F2F2F2;
-    padding-inline: 25px;
-    justify-content: space-evenly;
-    margin: 0px;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 9999px;
-    display: flex;
-    flex-direction: row;
+  z-index: 100;
+  list-style-type: none;
+  background-color: #F2F2F2;
+  padding-inline: 25px;
+  justify-content: space-evenly;
+  margin: 0px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  display: flex;
+  flex-direction: row;
 
 }
 
 .navbar a
 {
-    z-index: 100;
-    color: #3F4C64;
-    text-decoration: none;
-    padding-inline: 50px;
-    padding-block: 15px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  z-index: 100;
+  color: #3F4C64;
+  text-decoration: none;
+  padding-inline: 50px;
+  padding-block: 15px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .navbar a.about{
-    color: #9F4B8C;
-    background: #F2F2F2;
+  color: #9F4B8C;
+  background: #F2F2F2;
+}
+
+.navbar a.officers{
+  color: #3B93FF;
+  background: #F2F2F2;
 }
 
 .navbar a.active {
 
-    background: #C4DAFF;
-    border-radius: 9999px;
-    margin:5px;
+  background: #C4DAFF;
+  border-radius: 9999px;
+  margin:5px;
 }
 
 .navbar a.active-about {
 
-    background: #FFD3F5;
-    border-radius: 9999px;
-    margin:5px;
+  background: #FFD3F5;
+  border-radius: 9999px;
+  margin:5px;
+}
+
+.navbar a.active-officers {
+
+  background: #BDF5FF;
+  border-radius: 9999px;
+  margin:5px;
 }
 
 .navbar a:hover{
-    z-index: 5;
-    text-decoration: underline;
+  z-index: 5;
+  font-size: 2.15rem;
+  
 }
 
+.divider
+{
+  border-top: 2px solid #3F4C64;
+  border-radius: 5px;
+  max-width: 75%;
+}
+
+h2
+{
+  color: #3F4C64;
+  font-size: 3rem; 
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+h3
+{
+  color: #3F4C64;
+  font-size: 2.5rem; 
+  font-weight: 400;
+  text-align: center;
+  padding: 25px;
+}
+
+a
+{
+  font-size: 1.75rem; 
+  font-weight: 300;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.home-a
+{
+  color: #3F4C64;
+  max-width: 25%;
+}
 
 /*Phone design */
 
 @media (max-width: 600px) {
   .header-text{
-        font-size: 3rem;
-        max-width: 100%;
+      font-size: 3rem;
+      max-width: 100%;
   }
   
   .navbar a
     {
-        padding-inline: 15px;
-        padding-block: 10px;
-        display:block;
-        text-align: center;
-        font-size: 1.25rem;
-        font-weight: 500;
+      padding-inline: 15px;
+      padding-block: 10px;
+      display:block;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 500;
     }
 }
