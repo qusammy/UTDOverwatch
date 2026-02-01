@@ -10,15 +10,65 @@
     </head>
     <body>
         <header class = "about">
-            <nav class = "navbar">
-                <ul>
-                    <li><a class= "active-about about" href = "about.html">about</a></li>
-                    <li><a class = "about" href = "index.html">home</a></li>
-                    <li><a class = "about" href = "officers.html">officers</a></li>
-                </ul>
-            </nav>
             <h1 class="header-text">ABOUT US</h1>
+            <h1 class = "header-text-sub">club objective and meetings</h1>
         </header>
-        
+
+        <nav class = "navbar">
+            <ul>
+                <li><a class= "active-about about" href = "about.html">about</a></li>
+                <li><a class = "about" href = "index.html">home</a></li>
+                <li><a class = "about" href = "officers.html">officers</a></li>
+            </ul>
+        </nav>
+
+        <h3 class = "h3-about">
+            Mission Statement
+        </h3>
+
+        <a class = "about-a">
+            Welcome to the Overwatch club at UTD. What started out as a small interest group became a strong, 
+            developed multitude of people. We are a community of people interested in playing Overwatch both 
+            casually and competitively. We welcome all skill levels, introduce scrimmages, and build 
+            relationships within the club. We founded this club because of the lack of non-competitive environment 
+            for Overwatch at UTD. We would love to have new members join and contribute to our growing population.
+        </a>
+
+        <hr class ="hr-about">
+
+        <h3 class = "h3-about">
+            Meetings
+        </h3>
+
+         <a class = "about-a">
+            TBD
+        </a>
+
+        <hr class ="hr-about">
+
+        <h3 class = "h3-about">
+            Placeholder
+        </h3>
+
+         <a class = "about-a">
+            Hi
+        </a>
+
+        <script>
+                let lastScrollTop = 0;
+                const navbar = document.querySelector('.navbar');
+
+                window.addEventListener('scroll', function() {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > lastScrollTop) {
+                    navbar.style.top = '-100px';
+                } else {
+                    navbar.style.top = '0';
+                }
+
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+                });
+        </script>
     </body>
 </html>

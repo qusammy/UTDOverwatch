@@ -6,36 +6,81 @@
         <title>UTD Overwatch Club</title>
         <link rel="icon" type="assets/overwatch.webp" href = "assets/OWUTD-logo.png">
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pavanam&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <header class = "home">
-            <nav class = "navbar">
+            <h1 class="header-text">OVERWATCH 2 CLUB</h1>
+            <h1 class = "header-text-sub">at UTD</h1>
+        </header>
+
+        <nav class = "navbar">
                 <ul>
                     <li><a href = "about.html">about</a></li>
                     <li><a class="active" href = "index.html">home</a></li>
                     <li><a href = "officers.html">officers</a></li>
                 </ul>
-            </nav>
-            <h1 class="header-text">OVERWATCH 2 CLUB</h1>
-            <h1 class = "header-text-sub">at UTD</h1>
-        </header>
-
+        </nav>
 
         <h2>Find your duo.</h2>
 
         <hr class = "divider">
 
-        <h3>Join our Discord</h3>
-
-        <a class = "home-a">We use Discord to sponsor our events, look for groups, and give meeting updates. Click 
-            the logo below to join!
-        </a>
-
-        <a href="https://discord.gg/nWJnzCBAtY">
-            <img class = "discord-img" src = "assets/discord-transparent.png" alt = "discord">
-        </a>
+        <div class="container">
+        <div class="items">
+            <div class="icon-wrapper">
+            <span class="material-symbols-outlined">calendar_clock</span>
+            </div>
+            <div class="project-name">
+            <p>EVENTS</p>
+            </div>
         </div>
+        <div class="items">
+            <div class="icon-wrapper">
+             <span class="material-symbols-outlined">sports_esports</span>
+            </div>
+            <div class="project-name">
+            <p>CLUB TEAM</p>
+            </div>
+        </div>
+        <div class="items">
+            <div class="icon-wrapper">
+                <span class="material-symbols-outlined">group_add</span>
+            </div>
+            <div class="project-name">
+            <p>LFG</p>
+            </div>
+        </div>  
+        </div>
+
+        <hr class = "divider">
+
+        <div class="social-media-container">
+            <div class="social-block">
+                <h3>Join our Discord</h3>
+                <a class="home-a">
+                We use Discord to sponsor our events, look for groups, and give meeting updates. Click the logo below to join!
+                </a>
+                <a target="_blank" href="https://discord.gg/nWJnzCBAtY">
+                <img class="discord-img" src="assets/discord.webp" alt="discord">
+                </a>
+            </div>
+
+            <div class="social-block">
+                <h3>Follow us on Instagram</h3>
+                <a class="home-a">
+                Follow us on Instagram for meeting reminders, club visuals, and club sponsors! Click the logo below to view our page!
+                </a>
+                <a target="_blank" href="https://www.instagram.com/overwatchclub_utd/">
+                <img class="discord-img" src="assets/insagram.png" alt="instagram">
+                </a>
+            </div>
+
+        </div>
+
+
 
         <hr class = "divider">
 
@@ -43,9 +88,25 @@
 
         <section class = "img-gallery">
         <div>
-        <a href = "assets/findYourDuo.png"><img class = "reveal" src="assets/findYourDuo.png"></a>
-        <a href = "assets/OverwatchClub_ContactV2.png"><img class = "reveal" src="assets/OverwatchClub_ContactV2.png"></a>
+        <a target="_blank" href = "assets/findYourDuo.png"><img class = "reveal" src="assets/findYourDuo.png"></a>
+        <a target="_blank" href = "assets/OverwatchClub_ContactV2.png"><img class = "reveal" src="assets/OverwatchClub_ContactV2.png"></a>
         </div>
     </section>
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.querySelector('.navbar');
+
+            window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = '-100px';
+            } else {
+                navbar.style.top = '0';
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            });
+        </script>
     </body>
 </html>

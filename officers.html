@@ -10,15 +10,33 @@
     </head>
     <body>
         <header class = "officers">
-            <nav class = "navbar">
-                <ul>
-                    <li><a class="officers" href = "about.html">about</a></li>
-                    <li><a class="officers"href = "index.html">home</a></li>
-                    <li><a class="active-officers officers"  href = "officers.html">officers</a></li>
-                </ul>
-            </nav>
             <h1 class="header-text">OFFICERS</h1>
+            <h1 class = "header-text-sub">those who carry the club</h1>
         </header>
+        <nav class = "navbar">
+            <ul>
+                <li><a class="officers" href = "about.html">about</a></li>
+                <li><a class="officers"href = "index.html">home</a></li>
+                <li><a class="active-officers officers"  href = "officers.html">officers</a></li>
+            </ul>
+        </nav>
         
+        <script>
+            let lastScrollTop = 0;
+            const navbar = document.querySelector('.navbar');
+
+            window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = '-100px';
+            } else {
+                navbar.style.top = '0';
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            });
+        </script>
+
     </body>
 </html>
