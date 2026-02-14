@@ -450,18 +450,21 @@ p {
     letter-spacing: 1.5px;
   }
 
-  /* Touch-friendly hover fallback */
   .items:hover {
     border: 2px solid #3F4C64;
   }
 
   #container {
-  max-width: 98%;
-  margin: 0 auto;
-  margin-top: 10vh;
-}
+    max-width: 98%;
+    margin-top: 2vh;
+  }
+
+  img {
+    width:45%;
+  }
 
   .tag {
+    display: flex;
     font-size:0.60rem;
   }
 
